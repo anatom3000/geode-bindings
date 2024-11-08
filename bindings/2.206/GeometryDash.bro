@@ -17352,14 +17352,14 @@ class SetupPulsePopup : SetupTriggerPopup, cocos2d::extension::ColorPickerDelega
 	static SetupPulsePopup* create(EffectGameObject*, cocos2d::CCArray*);
 
 	TodoReturn getColorValue();
-	bool init(EffectGameObject*, cocos2d::CCArray*);
+	bool init(EffectGameObject*, cocos2d::CCArray*) = win 0x40c030;
 	void onCopy(cocos2d::CCObject* sender);
 	void onExclusive(cocos2d::CCObject* sender);
 	void onGroupMainOnly(cocos2d::CCObject* sender);
 	void onGroupSecondaryOnly(cocos2d::CCObject* sender);
 	void onHSVLegacyMode(cocos2d::CCObject* sender);
 	void onPaste(cocos2d::CCObject* sender);
-	void onSelectPulseMode(cocos2d::CCObject* sender);
+	void onSelectPulseMode(cocos2d::CCObject* sender) = win 0x40f6a0;
 	void onSelectSpecialColor(cocos2d::CCObject* sender);
 	void onSelectSpecialTargetID(cocos2d::CCObject* sender);
 	void onSelectTargetMode(cocos2d::CCObject* sender);
